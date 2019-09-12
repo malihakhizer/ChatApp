@@ -41,6 +41,7 @@ public class Dashboard extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.view_pager);
 
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),1));
+
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setText("Chats");
         tabLayout.getTabAt(1).setText("Users");
